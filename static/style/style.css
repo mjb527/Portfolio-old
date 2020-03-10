@@ -61,6 +61,17 @@ footer a:hover {
 	color: lightgrey
 }
 
+.contact-img {
+	border: none;
+	max-height: 200px;
+	max-width: auto;
+}
+
+.port-row {
+	background-color: #2E2E2E;
+	border-radius: 20px;
+}
+
 @media screen and (max-width: 768px) {
 	#coding-img {
 		height: 500px;
