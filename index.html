@@ -2,7 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Matthew Batko Portfolio</title
+    <title>Matthew Batko Portfolio</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -10,25 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <style media="screen">
-      img {
-        border-radius: 15px;
-        border: 1px solid #8cb1d9;
-        padding: 2px;
-      }
-      body {
-        background-color: #8cb1d9;
-      }
-      .carousel-item, .carousel-item img {
-        max-height: 750px;
-      }
-    </style>
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./static/style/style.css">
 
   </head>
 
   <body class="">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark" style="overflow: auto;">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,7 +28,7 @@
 
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" id="home" href="./index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -47,22 +39,26 @@
         </ul>
 
         <div class="ml-auto nav-item text-white">
-            Matt Batko Portfolio
+            <a class="nav-link" id="nav-right" href="./index.html">Matt Batko Portfolio<span class="sr-only">(current)</span></a>
         </div>
 
       </div>
     </nav>
 
-    <div class="container bg-light rounded px-4 my-4">
+
+    <!-- big image at the top -->
+    <div id="coding-img" class="w-100"></div>
+
+    <div id="main-body" class="container bg-light rounded px-4 mb-4">
       <div class="mx-auto py-4">
 
           <div class="row mb-4">
             <!-- left -->
             <div class="col-md-5 col-sm-12">
-            <img src="images/matthew_batko.jpg" alt="Picture of me" class="img-fluid">
+              <img src="./static/images/matthew_batko.jpg" alt="Picture of me" class="img-fluid">
             </div>
-            <div class="col-md-7 col-sm-12">
               <!-- right -->
+            <div class="col-md-7 col-sm-12">
               <div class="row">
                 <div class="h4 px-2">
                   A little about me...
@@ -112,13 +108,13 @@
                 New Hampshire, and California.
               </div>
               <div class="mb-2 pt-3">
-                <img src="images/baltic-sea.jpg" alt="Baltic Sea at Sunset, Mzezyno, Poland" class="img-fluid mx-auto mt-2">
+                <img src="./static/images/baltic-sea.jpg" title="Baltic Sea at Sunset, Mzezyno, Poland" alt="Baltic Sea at Sunset, Mzezyno, Poland" class="img-fluid mx-auto mt-2">
               </div>
 
             </div>
 
             <div class="col-md-6 col-sm-12 h-100">
-              <img src="images/me-switzerland.jpg" alt="Picture of me in Stoos, Switzerland" class="img-fluid my-auto mx-auto px-auto py-auto w-100">
+              <img src="./static/images/me-switzerland.jpg" title="Picture of me in Stoos, Switzerland" alt="Picture of me in Stoos, Switzerland" class="img-fluid my-auto mx-auto px-auto py-auto w-100">
             </div>
 
           </div>
@@ -129,15 +125,15 @@
             <div class="carousel-inner">
 
               <div class="carousel-item mb-4 active">
-                <img src="images/stoos.jpg" class="d-block w-100" alt="Peak at Stoos, Switzerland">
+                <img src="./static/images/stoos.jpg" class="d-block w-100" title="Peak at Stoos, Switzerland" alt="Peak at Stoos, Switzerland">
               </div>
 
               <div class="carousel-item mb-4">
-                <img src="images/ct.jpg" class="d-block w-100" alt="Conneticut foliage in Autumn">
+                <img src="./static/images/ct.jpg" class="d-block w-100" title="Conneticut foliage in Autumn" alt="Conneticut foliage in Autumn">
               </div>
 
               <div class="carousel-item mb-4">
-                <img src="images/triberg-wasserfall.jpg" class="d-block w-100" alt="Triberg Wasserfall, Triberg, Germany">
+                <img src="./static/images/triberg-wasserfall.jpg" class="d-block w-100" title="Triberg Wasserfall, Triberg, Germany" alt="Triberg Wasserfall, Triberg, Germany">
               </div>
 
             </div>
@@ -153,6 +149,83 @@
 
         </div>
 
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+                  esse
+                  quasi, veritatis totam voluptas nostrum.</p>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <p>
+                      <a href="index.html">Home</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="portfolio.html">Portfolio</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="contact.html">Contact</a>
+                    </p>
+                  </li>
+
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Contact details -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
+
+                <ul class="list-unstyled">
+                  <li><p>Email: <a href="mailto:mbatko0914@gmail.com">mbatko0914@gmail.com</a></p></li>
+                  <li><p>Phone: <a href="tel:+1-732-421-4586">(732) 421-4586</a></p></li>
+                  <li><p>Github: <a href="https://github.com/mjb527">mjb527</a></p></li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </div>
+          <!-- Footer Links -->
+
+        </footer>
+        <!-- Footer -->
 
 
 

@@ -1,0 +1,74 @@
+html {
+	height: 100%;
+}
+
+img {
+	border-radius: 15px;
+	border: 1px solid #8cb1d9;
+	padding: 2px;
+}
+body {
+	background: linear-gradient(to bottom right, #0d1926, #213f5f, #203f60, #407dbf, #8cb1d9, #c6d8ec) fixed;
+  background-size: cover;
+	overflow: auto;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.carousel-item, .carousel-item img {
+	max-height: 750px;
+}
+
+#main-body {
+	z-index: 1;
+	margin-top: 5%
+}
+
+#nav-right {
+	color: white;
+}
+
+#nav-right:hover, #home:hover {
+	color: #8cb1d9;
+}
+
+.changeOnHover {
+	color: black;
+}
+
+.changeOnHover:hover {
+	background-color: grey;
+}
+
+#coding-img {
+	background: url("../images/code-background.jpg");
+	width: 100%;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	background-position: 0 0;
+	background-size: cover;
+	z-index: -1;
+}
+
+footer, footer a {
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+footer a:hover {
+	color: lightgrey
+}
+
+@media screen and (max-width: 768px) {
+	#coding-img {
+		height: 500px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#coding-img {
+		height: 800px;
+	}
+}
