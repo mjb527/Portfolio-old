@@ -33,7 +33,7 @@ body {
 	color: white;
 }
 
-#nav-right:hover, #home:hover {
+.navbar .navbar-nav .nav-item .nav-link:hover, #nav-right:hover {
 	color: #8cb1d9;
 }
 
