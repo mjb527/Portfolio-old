@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html {
 	height: 100%;
 }
@@ -14,6 +17,7 @@ body {
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+	font-family: 'Roboto', sans-serif;
 }
 
 .carousel-item, .carousel-item img {
@@ -79,6 +83,9 @@ footer a:hover {
 
 	.port-row div img {
 		margin-bottom: 15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }
