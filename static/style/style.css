@@ -5,11 +5,37 @@ html {
 	height: 100%;
 }
 
-img {
-	border-radius: 15px;
-	border: 1px solid #8cb1d9;
-	padding: 2px;
+.img-div {
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	align-items: center;
+
 }
+
+.img-div img {
+	border-radius: 15px;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+	height: 100%;
+}
+
+.tdUrl {
+	padding-left: 5px;
+}
+
+.carousel {
+	height: 805px;
+}
+
+.carousel img {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	display: none;
+}
+
 body {
 	background: linear-gradient(to bottom right, #0d1926, #213f5f, #203f60, #407dbf, #8cb1d9, #c6d8ec) fixed;
   background-size: cover;
@@ -88,10 +114,14 @@ footer a:hover {
 		margin-right: auto;
 	}
 
+
 }
 
 @media screen and (min-width: 768px) {
 	#coding-img {
 		height: 800px;
+	}
+	.img-div img {
+		margin-top: 10%;
 	}
 }
