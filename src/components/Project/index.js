@@ -9,7 +9,7 @@ function Project(props) {
 
   return(
 
-    <div className="row my-4">
+    <div className="row project-row my-4">
 
       { /* img from url */}
       <div className="col-md-4 col-sm-12 mb-sm-4 mb-md-0">

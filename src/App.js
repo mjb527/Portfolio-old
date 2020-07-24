@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio/index";
 // import Project from "./components/Project/index";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer/index"
 
 // class
 import './App.css';
@@ -32,6 +33,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
