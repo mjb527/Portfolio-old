@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-blue">
 
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
     </button>
 
-      <div className="collapse navbar-collapse">
+      <div className="collapse navbar-collapse" id="collapse">
 
         <ul className="navbar-nav">
           <li className="nav-item active">
@@ -23,10 +23,6 @@ function Nav() {
           </li>
         </ul>
 
-      </div>
-
-      <div className="ml-auto nav-item">
-          <Link className="nav-link" to="/">Matt Batko Portfolio</Link>
       </div>
 
     </nav>

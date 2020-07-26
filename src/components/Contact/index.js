@@ -4,33 +4,34 @@ import "./contact.css"
 function Contact() {
 
   return(
-    <div className="container mt-5">
+    <div className="w-100 d-flex justify-content-center mt-5 h-80">
+      <div>
+        <div className="mb-5">
+          <h2>Interested in contacting me?</h2>
+          <h4>Here's some ways you can get in touch!</h4>
+        </div>
 
-      <div className="mb-5">
-        <h2>Interested in contacting me?</h2>
-        <h4>Here's some ways you can get in touch!</h4>
+        { /* telephone number */ }
+        {/* if on mobile make telephone link. else, plain text*/}
+        { renderPhone() }
+
+
+        { /* email address, will open mail client */ }
+        <div className="mb-4">
+          <h6>Email: <a href="mailto:mbatko0914@gmail.com">mbatko0914@gmail.com</a></h6>
+        </div>
+
+        { /* linkedin */ }
+        <div className="mb-4">
+          <h6>LinkedIn: <a href="https://linkedin.com/in/matthew-batko">https://linkedin.com/in/matthew-batko</a></h6>
+        </div>
+
+        { /* github */ }
+        <div className="mb-4">
+          <h6>Github: <a href="https://github.com/mjb527">mjb527</a></h6>
+        </div>
+
       </div>
-
-      { /* telephone number */ }
-      {/* if on mobile make telephone link. else, plain text*/}
-      { renderPhone() }
-
-
-      { /* email address, will open mail client */ }
-      <div className="mb-4">
-        <h6>Email: <a href="mailto:mbatko0914@gmail.com">mbatko0914@gmail.com</a></h6>
-      </div>
-
-      { /* linkedin */ }
-      <div className="mb-4">
-        <h6>LinkedIn: <a href="https://linkedin.com/in/matthew-batko">https://linkedin.com/in/matthew-batko</a></h6>
-      </div>
-
-      { /* github */ }
-      <div className="mb-4">
-        <h6>Github: <a href="https://github.com/mjb527">mjb527</a></h6>
-      </div>
-
     </div>
   );
 

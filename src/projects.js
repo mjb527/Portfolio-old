@@ -34,8 +34,8 @@ const projects = [
     repo: "https://github.com/mjb527/NYME",
     deployment: "https://github.com/mjb527/NYME",
     description: `The New York Mock Exchange is an interactive app anyone can use to learn how to invest in the stock market. No real funds are used, but up to date stock prices are given, as well as a history up to six months for any stock.`,
-    technologies: ['HTML', 'jQuery', 'Chart.js API', 'TwelveData API'],
-    img_url: "/imgs/NYME.png"
+    technologies: ['HTML', 'jQuery', 'Chart.js API', 'TwelveData API', 'Local Storage'],
+    img_url: "/imgs/Chart-js-screenshot.png"
   }
 
 ];
